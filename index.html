@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+  <nav>
+    <a href="#inicioMenu">Inicio</a>
+    <a href="#resueltosMenu">Resueltos</a>
+    <a href="#construccionMenu">En Construcción</a>
+  </nav>
+  <section class="introBlock">
+  <h1 id="inicioMenu">Ejercicios usando JavaScript</h1>
+  <p>A continuación se presentan una serie de ejercicios dividos en dos bloques, los que están resueltos y los que están en fase de construcción. Se diferencian por un símbolo: - ✔ - y - 🛠 - respectivamente.</p>
+  </section>
+  <section id="resueltosMenu" class="resolvedBlock">
+    <h3>Resueltos:</h3>
+    <div class="excersisesBlock">
+      <h3>✔ Botón</h3>
+      <p>Crear una página con un solo botón que al clickearlo lance un alert o console.log con un número entero aleatorio entre 1 y 100.</p>
+      <button onclick="botonNumAleatorio();">Click acá para probar script</button>
+    </div>
+    <div class="excersisesBlock">
+      <h3>✔ Simular un Dado</h3>
+      <p>Si el usuario introduce "lanzar" generar un número aletorio entre 1 y 6. Pedir nuevamente al usuario un nuevo comando hasta que se introduzca "quit"</p>
+      <button onclick="lanzarDado();">Click acá para probar script</button>
+    </div>
+    <div class="excersisesBlock">
+      <h3>✔ Stop</h3>
+      <p>Ingresar mediante prompt números indefinidamente hasta que el usuario ingrese “Stop”. Almacenar todos los datos en un array y mostrarlos al final. “Stop” debe quedar fuera del array.</p>
+      <button onclick="ingresarNum();">Click acá para probar script</button> 
+    </div>
+  </section>
+  <section id="construccionMenu" class="toDoBlock">
+    <h3>En construcción:</h3>
+    <div class="excersisesBlock">
+      <h3>🛠 E-commerce</h3>
+      <p>Armar una aplicación que soporte las siguientes funcionalidades: (a) Alta y listado de usuarios. (b) Alta y listado productos. (c) Agregar pedidos. (d) Mejoras</p>
+      <p>A.1- Alta de usuario:</p>
+      <form>
+        Ingrese nombre: <input id="firstName" value="Minnie">
+        </br>
+        Ingrese apellido: <input id="lastName" value="Mouse">
+        </br>
+        Ingrese teléfono: <input id="userPhone" value="1125252525">
+        </br>
+        Ingrese mail: <input id="userMail" value="m.mouse@gmail.com">
+        </br></br>
+      </form>
+      <button onclick="eCommerceApp();">Dar de Alta</button>
+      </br>
+      </br>
+      <p>A.2- Listado de usuarios:</p>
+      <button onclick="mostrarUsers();">Mostrar Usuarios</button>
+      </br></br>
+      <p id="showUsers"></p>
+      </br>
+      <p>B.1- Alta de productos:</p>
+      <form>
+        Ingrese producto: <input id="productoHtml" value="Pollo">
+        </br>
+        Ingrese precio: <input id="precioHtml" value="80">
+        </br></br>
+      </form>
+      <button onclick="IngresarProducto();">Dar de Alta</button>
+    </div>
+    <div class="excersisesBlock">
+      <h3>🛠 Array, función y excepción</h3>
+      <p>Crear una función que reciba como parámetro un array y que nos retorno el número más alto que contiene. Si el parámetro no es un array, lanzar una excepción. Si no hay ningún elemento numérico, lanzar una excepción.</p>
+      <button onclick="funcionA();">En construcción</button> 
+    </div>
+    <div class="excersisesBlock">
+      <h3>🛠 Eliminar extremos</h3>
+      <p>Ingresar mediante prompt números hasta el ingreso de un 0. Almacenar la información en un array. Eliminar del array el número más alto y el más bajo. Si el más alto o bajo se repiten solo eliminarlos una vez.</p>
+      <button onclick="funcionA();">En construcción</button> 
+    </div>
+    <div class="excersisesBlock">
+      <h3>🛠 Varios arrays</h3>
+      <p>Ingresar mediante prompt números hasta el ingreso de un 0. Crear un array para los números pares, otro para los impares y un tercero para almacenar datos no numéricos. Mostrar los resultados al finalizar el ciclo. El valor 0 no incluirlo en ningún array.</p>
+      <button onclick="funcionA();">En construcción</button> 
+    </div>
+    <div class="excersisesBlock">
+      <h3>🛠 Validar usuario y contraseña</h3>
+      <p>Pedir a un usuario que ingrese nombre y contraseña. Validar y devolver TRUE si es "Pedro" con contraseña "cuba".</p>
+      <button onclick="funcionA();">En construcción</button> 
+    </div>
+    <!--div class="excersisesBlock">
+      <h3>🛠 Titulo</h3>
+      <p>Contenido.</p>
+      <button onclick="funcionA();">En construcción</button> 
+    </div-->
+  </section>
+  <script src="script/main.js"></script>
+</body>
+</html>
